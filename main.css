@@ -60,6 +60,39 @@ header{
 main{
     height: 33vh;
     background-color: #C4EDF1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .cuadrado-left{
+        background-color: #91D3D9;
+        height: 70%;
+        aspect-ratio: 1/1;
+    }
+
+    .seccion-derecha{
+        height: 70%;
+        aspect-ratio: 2/1;
+        display: flex;
+        flex-direction: column;
+
+        .rect-top{
+            background-color: #656A73;
+            height: 20%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text{
+            .placeholder-long{
+                background-color: #FFFFFF;
+                height: 20%;
+                width: 100%;
+            }
+        }
+    }
 }
 
 footer{
