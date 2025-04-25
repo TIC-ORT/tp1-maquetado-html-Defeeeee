@@ -17,10 +17,43 @@ header{
     align-items: center;
 
     .rectangulo-piola{
-        background-color: #FF9978;
         height: 20%;
-        aspect-ratio: 8/1;
+        aspect-ratio: 7/1;
+        display: flex;
 
+        .rectangulo-left{
+            background-color: #FF9978;
+            height: 100%;
+            aspect-ratio: 6/1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .linea{
+                background-color: #FFFFFF;
+                width: 90%;
+                height: 25%;
+            }
+        }
+
+        .cuadrado-inner-right{
+            background-color: #656A73;
+            height: 100%;
+            aspect-ratio: 1/1;
+        }
+    }
+
+    .dashes{
+        height: 5%;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+
+        .dash{
+            background-color: #CCCBCA;
+            height: 100%;
+            width: 20%;
+        }
     }
 }
 
