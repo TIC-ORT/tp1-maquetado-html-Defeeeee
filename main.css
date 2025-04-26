@@ -10,7 +10,7 @@ body{
 }
 
 header{
-    height: 33vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -58,27 +58,64 @@ header{
 }
 
 main{
-    height: 33vh;
+    height: 30vh;
     background-color: #C4EDF1;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: center;
+    gap: 10%;
 
     .cuadrado-left{
         background-color: #91D3D9;
-        height: 70%;
+        height: 60%;
         aspect-ratio: 1/1;
+        display: flex;
+
+        align-items: center;
+        flex-direction: column;
+
+        .cont-renglones{
+            height: 35%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 10%;
+
+            .cont-cuadraditolinea{
+
+                height: 18%;
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+
+                .cuadradito{
+                    background-color: #C4EDF1;
+                    height: 100%;
+                    aspect-ratio: 1/1;
+                }
+
+                .linea{
+                    background-color: #FFFFFF;
+                    width: 80%;
+                    height: 100%;
+                }
+            }
+        }
+
     }
 
     .seccion-derecha{
-        height: 70%;
-        aspect-ratio: 2/1;
+        height: 60%;
+        aspect-ratio: 5/2;
         display: flex;
         flex-direction: column;
 
+
         .rect-top{
             background-color: #656A73;
-            height: 20%;
+            height: 16%;
             width: 100%;
             display: flex;
             justify-content: center;
@@ -86,15 +123,125 @@ main{
         }
 
         .text{
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
             .placeholder-long{
                 background-color: #FFFFFF;
-                height: 20%;
+                height: 12%;
                 width: 100%;
+            }
+
+            .placeholder-short{
+                background-color: #FFFFFF;
+                height: 12%;
+                width: 50%;
             }
         }
     }
 }
 
 footer{
-    height: 33vh;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .cont-footer{
+        height: 70%;
+        width: 85%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .item{
+            background-color: #FFFFFF;
+            height: 100%;
+            aspect-ratio: 6/9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3%;
+
+            .cuadrado1{
+                background-color: #FF9978;
+                width: 100%;
+                aspect-ratio: 1/1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .inner-ct{
+                    width: 65%;
+                    aspect-ratio: 1/1;
+                    .rectangle{
+                        background-color: #ED6D47;
+                        height: 18%;
+                    }
+
+                    .text{
+                        height: 70%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+
+                        .placeholder-long{
+                            background-color: #FFFFFF;
+                            height: 7%;
+                            width: 100%;
+                        }
+
+                        .placeholder-short{
+                            background-color: #FFFFFF;
+                            height: 7%;
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+
+            .cuadrado2{
+                background-color: #ABE1E5;
+                width: 100%;
+                aspect-ratio: 1/1;
+            }
+
+            .cuadrado3{
+                background-color: #FFC86D;
+                width: 100%;
+                aspect-ratio: 1/1;
+            }
+
+            .text{
+                width: 100%;
+                height: 33%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                .placeholder-long1{
+                    background-color: #656A73;
+                    height: 10%;
+                    width: 100%;
+                }
+
+
+                .placeholder-long{
+                    background-color: #CCCBCA;
+                    height: 10%;
+                    width: 100%;
+                }
+
+                .placeholder-short{
+                    background-color: #CCCBCA;
+                    height: 10%;
+                    width: 50%;
+                }
+            }
+        }
+    }
 }
